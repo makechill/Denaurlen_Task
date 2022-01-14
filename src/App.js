@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Credential from "./Components/Credentials/Credential";
+import Valuation from "./Components/Valuations/Valuation";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const [state, setState] = useState(false);
+  const [user, setUser] = useState({
+    name: "",
+    username: "",
+  });
+
+  const call = (name, username) => {
+    console.log("user page clicked");
+    setState(!state);
+    setUser({
+      name: name,
+      username: username,
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Credential passClick={call} />} />
+          <Route
+            exact
+            path="/user"
+            element={<Valuation authorized={state} username={user} />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;

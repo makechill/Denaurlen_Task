@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 1.3rem 1rem 1.3rem 1rem;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.profile_name_container {
+  display: flex;
+  align-items: center;
+}
+
+.profile_image_container {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile_image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 0px solid black;
+  border-radius: 50%;
+  margin: auto auto;
+}
+
+.name_date_container {
+  margin-left: 0.5em;
+}
+
+.name_date_container .username {
+  font-weight: bolder;
+  margin-bottom: 0.25rem;
+}
+
+.name_date_container p {
+  font-size: 14px;
+}
+
+.name_date_container .date {
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+}
+
+.coins_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+}
+
+.coins_text {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.gross_coins {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(170, 170, 170);
+}
+
+.fa-coins {
+  color: rgb(235, 206, 47);
+  background: none !important;
+}
+
+.fa-chart-line {
+  color: rgb(56, 219, 56);
+}
+
+.fa-ellipsis-v {
+  color: rgb(170, 170, 170);
+}
+
+.image_container {
+  width: 100%;
+  height: 70%;
+}
+
+.post_image {
+  width: 100%;
+  height: 100%;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.7rem 0.4rem 0.7rem;
+}
+
+.icons {
+  display: flex;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.icons i {
+  font-size: 22px;
+}
+
+.lead_btn {
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(53, 28, 99);
+  color: white;
+}
+
+.u_icon {
+  display: inline-block;
+  margin-left: 0.3rem;
+  background-image: linear-gradient(to bottom, yellow, orange);
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+}
+
+.interested {
+  margin-left: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile_hours_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 1rem 1rem 1rem 0.6rem;
+}
+
+.profile_hours_container .profile_image_container {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(53, 28, 99);
+}
+
+.profile_name_container .coins_text {
+  margin-right: 0.3rem;
+}
+
+.other_username {
+  display: inline-block;
+  font-weight: bolder;
+  margin-bottom: 0.35rem;
+  margin-right: 0.3rem;
+}
+
+.hours_btn {
+  margin: 0 0.2rem;
+  outline: none;
+  background-color: rgb(193, 222, 231);
+  border: none;
+  padding: 0.2rem 0.15rem;
+}
+
+.caption {
+  padding: 0 0.7rem 0.7rem 0.7rem;
+}
